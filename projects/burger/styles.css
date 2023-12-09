@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f6dfad;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  min-width: 800px;
+}
+
+.toolbar {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #703b09;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 90;
+}
+.toolbar nav {
+  height: 100%;
+}
+
+.navigation-item {
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.navigation-item a {
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  padding: 16px 10px;
+  border-bottom: 4px solid transparent;
+  box-sizing: border-box;
+  display: block;
+}
+.navigation-item a:hover,
+.navigation-item a:active,
+.navigation-item a.active {
+  background-color: #8f5c2c;
+  border-bottom: 4px solid #40a4c8;
+  color: white;
+}
+.burger-container {
+  height: 100%;
+  width: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  background-color: #faf0d9;
+  justify-content: center;
+}
+.Burger {
+  margin: auto;
+  max-height: 550px;
+  max-width: 550px;
+  overflow: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.build-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+.build-control button {
+  display: block;
+  font: inherit;
+  padding: 5px;
+  margin: 0 5px;
+  width: 80px;
+  border: 1px solid #aa6817;
+  cursor: pointer;
+  outline: none;
+}
+
+.build-control button:disabled {
+  background-color: #ac9980;
+  border: 1px solid #7e7365;
+  color: #ccc;
+  cursor: default;
+}
+
+.build-control button:hover:disabled {
+  background-color: #ac9980;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.label {
+  padding: 10px;
+  font-weight: bold;
+  min-width: 150px;
+}
+
+.build-control .less {
+  background-color: #d39952;
+  color: white;
+}
+
+.build-control .more {
+  background-color: #8f5e1e;
+  color: white;
+}
+
+.build-control .less:hover,
+.build-control .less:active {
+  background-color: #daa972;
+  color: white;
+}
+
+.build-control .more:hover,
+.build-control .more:active {
+  background-color: #99703f;
+  color: white;
+}
+
+.build-controls {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  box-shadow: 0 2px 1p #ccc;
+  background-color: white;
+  height: 100%;
+  flex-shrink: 0;
+  width: 50%;
+  justify-content: center;
+}
+
+.order-button {
+  background-color: #614a38;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-family: inherit;
+  font-size: 1.2em;
+  width: 100%;
+  padding: 15px 30px;
+  border: none;
+}
+
+.order-button:hover,
+.order-button:active {
+  background-color: #e2aa7f;
+  color: #504f4d;
+}
+
+.order-button:disabled {
+  background-color: #c7c6c6;
+  cursor: not-allowed;
+  border: 1px solid #ccc;
+  color: #888888;
+}
+
+.order-button:not(:disabled) {
+  animation: enable 0.3s linear;
+}
+
+.logo {
+  background-color: white;
+  padding: 8px;
+  height: 80%;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.logo img {
+  height: 100%;
+}
+.navigation-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.Button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.Button:first-of-type {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.Success {
+  color: #5c9210;
+}
+
+.Danger {
+  color: #944317;
+}
+.content {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  background: #f6dfad;
+  padding: 0;
+  height: 600px;
+}
+
+@media (min-width: 600px) {
+  .Modal {
+    width: 500px;
+    left: calc(50% - 250px);
+  }
+}
