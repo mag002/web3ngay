@@ -8,12 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function clickMore(event) {
     console.log(event);
-    // DEMO only => remove when teach => teach student using if else with id to add new HTML and increase the value at that moment
     const id = event.target.parentElement.id;
-    const ingredientHTML = getHTMLById(id);
-    ingredientContainer.innerHTML += ingredientHTML;
 
-    // Work here =
+
+    /* =========== Update your code here =========== */
+    
+
+    /* ===========          END         =========== */
+
   }
 
   function getHTMLById(id) {

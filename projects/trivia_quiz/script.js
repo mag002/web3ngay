@@ -106,13 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Use If / else if / else
     // Update resultContainer.textContent like the line 72
 
-    // if (score >= 15) {
-    //   resultContainer.textContent += "\nWow, you know your stuff!";
-    // } else if (score >= 5 && score < 15) {
-    //   resultContainer.textContent += "\nNot bad!";
-    // } else {
-    //   resultContainer.textContent += "\nbetter luck next time";
-    // }
 
     /* ===========          END         =========== */
 
